@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="8dp"
+    android:background="#00F43636"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="73dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:text="id"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+
+                android:id="@+id/u_id"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20sp"
+                android:layout_marginLeft="20sp"
+                android:width="150px"
+                tools:ignore="Autofill,LabelFor,PxUsage,RtlHardcoded,TextFields" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:text="tài khoản"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/u_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_marginStart="20sp"
+                android:layout_marginLeft="20sp"
+                android:width="200dp"
+                tools:ignore="Autofill,LabelFor,RtlHardcoded,TextFields" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:text="mật khẩu"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/u_email"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:layout_column="2"
+                android:layout_marginStart="20sp"
+                android:layout_marginLeft="20sp"
+                android:width="200dp"
+                tools:ignore="Autofill,LabelFor,RtlHardcoded,TextFields" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:text="email"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/u_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_marginStart="20sp"
+                android:layout_marginLeft="20sp"
+                android:width="200dp"
+                tools:ignore="Autofill,DuplicateIds,LabelFor,RtlHardcoded,TextFields" />
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="222dp"
+        android:layout_marginTop="20sp">
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="wrap_content"
+            android:layout_height="191dp"
+            android:background="#FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40sp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="81dp"
+            android:background="#2196F3"
+            android:onClick="saveRecord"
+            android:text="Đăng kí"
+            tools:ignore="ButtonStyle,HardcodedText" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="81dp"
+            android:background="#8BC34A"
+            android:onClick="viewRecord"
+            android:text="xem thông tin"
+            tools:ignore="ButtonStyle,HardcodedText" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="81dp"
+            android:background="#FFC107"
+            android:onClick="updateRecord"
+            android:text="cập nhật "
+            tools:ignore="ButtonStyle,HardcodedText" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="81dp"
+            android:background="#FF5722"
+            android:onClick="deleteRecord"
+            android:text="xóa"
+            tools:ignore="ButtonStyle,HardcodedText" />
+    </LinearLayout>
+</LinearLayout>
